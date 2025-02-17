@@ -59,7 +59,7 @@ def run():
     inputs = {
         'repo_url': 'https://github.com/ewfx/appsec_sample_code',
         'local_path': f'/tmp/cloned_repo_{generate_run_id()}',
-        'scan_depth': 3,
+        'scan_depth': 5,
         'analysis_mode': 'quick'
     }
     try:
