@@ -147,13 +147,6 @@ class AppsecAgents():
             config=self.tasks_config['commit_changes'],
         )
 
-    # @task
-    # def scan_dependencies_task(self) -> Task:
-    #     """Task to scan dependencies for vulnerabilities."""
-    #     return Task(
-    #         config=self.tasks_config['scan_dependencies_task'],
-    #     )
-
     @task
     def detect_secrets_task(self) -> Task:
         """Task to detect hardcoded secrets."""
