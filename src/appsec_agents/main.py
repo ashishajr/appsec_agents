@@ -116,22 +116,4 @@ def test():
         print(f"An error occurred while testing the crew: {e}")
 
 
-if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Usage: main.py [run|train|replay|test] [optional arguments...]")
-        sys.exit(1)
-
-    command = sys.argv[1].lower()
-
-    if command == "run":
-        run()
-    elif command == "train":
-        train()
-    elif command == "replay":
-        replay()
-    elif command == "test":
-        test()
-    else:
-        print(f"Unknown command: {command}")
-        print("Usage: main.py [run|train|replay|test] [optional arguments...]")
-        sys.exit(1)
+if __na
