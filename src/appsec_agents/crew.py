@@ -171,4 +171,11 @@ class AppsecAgents():
         )
 
     @crew
-    def cre
+    def crew(self) -> Crew:
+        """Creates the AppsecAgents crew."""
+        return Crew(
+            agents=self.agents,  # Automatically populated by the @agent decorator
+            tasks=self.tasks,  # Automatically populated by the @task decorator
+            process=Process.sequential,  # Run tasks sequentially
+            verbose=True,
+        )
